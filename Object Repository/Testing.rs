@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Testing</name>
    <tag></tag>
-   <elementGuidId>5dc9fe17-4486-459f-aabf-45d34e148845</elementGuidId>
+   <elementGuidId>aa37cdc8-f8b3-4bff-9697-2466895aa13c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;QE\&quot;,\n  \&quot;email\&quot;: \&quot;${GlobalVariable.GlobalRegEmail}\&quot;,\n  \&quot;password\&quot;: \&quot;qealta123\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,13 +21,21 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>b0ead0df-1ee2-4412-8041-c7df06c78a94</webElementGuid>
+      <webElementGuid>54f48160-c65d-4409-9687-4b868a2cf352</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer </value>
+      <webElementGuid>15d65e4f-5066-4565-bfb4-988ce09412ef</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${variable}/users/signup</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://datausa.io/api/data?drilldowns=123&amp;measures=123</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,16 +47,9 @@
    <variables>
       <defaultValue>GlobalVariable.Globalurl</defaultValue>
       <description></description>
-      <id>5388299a-b37c-4b90-84be-f739f33107e1</id>
+      <id>326037d0-545c-4eb5-829f-fabf101204fd</id>
       <masked>false</masked>
       <name>variable</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.GlobalRegEmail</defaultValue>
-      <description></description>
-      <id>be9176b6-224d-4e39-941a-6b62e01173ef</id>
-      <masked>false</masked>
-      <name>emailreg</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

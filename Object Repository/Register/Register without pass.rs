@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Register without pass</name>
    <tag></tag>
-   <elementGuidId>5dc9fe17-4486-459f-aabf-45d34e148845</elementGuidId>
+   <elementGuidId>24dec368-6c7a-44c0-8685-f24a483e557f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;QE\&quot;,\n  \&quot;email\&quot;: \&quot;${GlobalVariable.GlobalRegEmail}\&quot;,\n  \&quot;password\&quot;: \&quot;qealta123\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot; zaki\&quot;,\n  \&quot;email\&quot;: \&quot;zaki123@gmail.com\&quot;,\n  \&quot;password\&quot;: \&quot;\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,7 +21,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>b0ead0df-1ee2-4412-8041-c7df06c78a94</webElementGuid>
+      <webElementGuid>52ad92a9-13cf-4287-b3e4-4e1f31828ef3</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
@@ -39,16 +39,9 @@
    <variables>
       <defaultValue>GlobalVariable.Globalurl</defaultValue>
       <description></description>
-      <id>5388299a-b37c-4b90-84be-f739f33107e1</id>
+      <id>69b4fa90-5306-43f8-9cd5-19e5dbbd8317</id>
       <masked>false</masked>
       <name>variable</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.GlobalRegEmail</defaultValue>
-      <description></description>
-      <id>be9176b6-224d-4e39-941a-6b62e01173ef</id>
-      <masked>false</masked>
-      <name>emailreg</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

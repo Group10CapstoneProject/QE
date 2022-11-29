@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Get All admin without token</name>
    <tag></tag>
-   <elementGuidId>5dc9fe17-4486-459f-aabf-45d34e148845</elementGuidId>
+   <elementGuidId>179dc05b-5e2d-41dc-90d6-8f30b787d132</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;QE\&quot;,\n  \&quot;email\&quot;: \&quot;${GlobalVariable.GlobalRegEmail}\&quot;,\n  \&quot;password\&quot;: \&quot;qealta123\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>b0ead0df-1ee2-4412-8041-c7df06c78a94</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${variable}/users/signup</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${variable}/users/admin?page=1&amp;limit=10&amp;q=QE</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,16 +27,9 @@
    <variables>
       <defaultValue>GlobalVariable.Globalurl</defaultValue>
       <description></description>
-      <id>5388299a-b37c-4b90-84be-f739f33107e1</id>
+      <id>56bca0d1-a52c-458b-a617-3bcf029c9047</id>
       <masked>false</masked>
       <name>variable</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.GlobalRegEmail</defaultValue>
-      <description></description>
-      <id>be9176b6-224d-4e39-941a-6b62e01173ef</id>
-      <masked>false</masked>
-      <name>emailreg</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

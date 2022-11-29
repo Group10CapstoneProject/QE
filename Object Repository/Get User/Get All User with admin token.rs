@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Get All User with admin token</name>
    <tag></tag>
-   <elementGuidId>5dc9fe17-4486-459f-aabf-45d34e148845</elementGuidId>
+   <elementGuidId>d1ed600a-b96b-476b-8f41-2d875a15fe16</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;QE\&quot;,\n  \&quot;email\&quot;: \&quot;${GlobalVariable.GlobalRegEmail}\&quot;,\n  \&quot;password\&quot;: \&quot;qealta123\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>b0ead0df-1ee2-4412-8041-c7df06c78a94</webElementGuid>
+      <value>Bearer ${GlobalVariable.AdminToken}</value>
+      <webElementGuid>4d7cec07-4df6-422b-93a9-f787c9463c17</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${variable}/users/signup</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${variable}/users</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,16 +35,16 @@
    <variables>
       <defaultValue>GlobalVariable.Globalurl</defaultValue>
       <description></description>
-      <id>5388299a-b37c-4b90-84be-f739f33107e1</id>
+      <id>caea2856-03f2-4396-b71d-f0f93211674c</id>
       <masked>false</masked>
       <name>variable</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.GlobalRegEmail</defaultValue>
+      <defaultValue>GlobalVariable.AdminToken</defaultValue>
       <description></description>
-      <id>be9176b6-224d-4e39-941a-6b62e01173ef</id>
+      <id>6b67fced-8b75-4b72-b0c2-db73735e7c76</id>
       <masked>false</masked>
-      <name>emailreg</name>
+      <name>AdminToken</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

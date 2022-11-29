@@ -49,7 +49,7 @@ class Login {
 	 */
 	@Given("I want to write a step with (.*)")
 	def I_want_to_write_a_step_with_name(String name) {
-		Response = WS.sendRequest(findTestObject('Login'))
+		Response = WS.sendRequest(findTestObject('Login Test/Login Admin'))
 		
 		WS.verifyResponseStatusCode(Response, 400)
 		println name

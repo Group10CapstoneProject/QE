@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Login User</name>
    <tag></tag>
-   <elementGuidId>5dc9fe17-4486-459f-aabf-45d34e148845</elementGuidId>
+   <elementGuidId>fc6e28f3-3f14-4229-b219-5bdb9651ba46</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;QE\&quot;,\n  \&quot;email\&quot;: \&quot;${GlobalVariable.GlobalRegEmail}\&quot;,\n  \&quot;password\&quot;: \&quot;qealta123\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;${GlobalVariable.GlobalRegEmail}\&quot;,\n  \&quot;password\&quot;: \&quot;qealta123\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,13 +21,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>b0ead0df-1ee2-4412-8041-c7df06c78a94</webElementGuid>
+      <webElementGuid>75605985-cb93-411c-bf74-052139975ec3</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${variable}/users/signup</restUrl>
+   <restUrl>${variable}/auth/login</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,16 +39,16 @@
    <variables>
       <defaultValue>GlobalVariable.Globalurl</defaultValue>
       <description></description>
-      <id>5388299a-b37c-4b90-84be-f739f33107e1</id>
+      <id>e82d8a5b-80bf-4d61-8d9d-52860b634e1f</id>
       <masked>false</masked>
       <name>variable</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.GlobalRegEmail</defaultValue>
+      <defaultValue>GlobalVariable.AdminToken</defaultValue>
       <description></description>
-      <id>be9176b6-224d-4e39-941a-6b62e01173ef</id>
+      <id>9fc6dcf1-4ba4-4728-b6c1-aabe25f15ae8</id>
       <masked>false</masked>
-      <name>emailreg</name>
+      <name>AdminToken</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -60,8 +60,10 @@ import com.kms.katalon.core.webservice.verification.WSResponseManager
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
+
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

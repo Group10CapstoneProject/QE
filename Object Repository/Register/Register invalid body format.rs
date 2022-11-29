@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Register invalid body format</name>
    <tag></tag>
-   <elementGuidId>5dc9fe17-4486-459f-aabf-45d34e148845</elementGuidId>
+   <elementGuidId>d8c61c73-3a8d-456f-bbde-e8cc926907b2</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;QE\&quot;,\n  \&quot;email\&quot;: \&quot;${GlobalVariable.GlobalRegEmail}\&quot;,\n  \&quot;password\&quot;: \&quot;qealta123\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;nama\&quot;: \&quot;QE\&quot;,\n  \&quot;mail\&quot;: \&quot;QE1@gmail.com\&quot;,\n  \&quot;pass\&quot;: \&quot;qealta123\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -39,16 +39,9 @@
    <variables>
       <defaultValue>GlobalVariable.Globalurl</defaultValue>
       <description></description>
-      <id>5388299a-b37c-4b90-84be-f739f33107e1</id>
+      <id>7741b30d-21ff-4bc7-867a-335e58891f23</id>
       <masked>false</masked>
       <name>variable</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.GlobalRegEmail</defaultValue>
-      <description></description>
-      <id>be9176b6-224d-4e39-941a-6b62e01173ef</id>
-      <masked>false</masked>
-      <name>emailreg</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
