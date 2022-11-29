@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev.rnwxyz.codes/api/v1'</initValue>
+      <name>Globalurl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk3MjY3MzAsInJvbGUiOiJ1c2VyIiwic2Vzc2lvbl9pZCI6Ijg1OWMzMTVhLTI0YTctNGFlMS1iODI5LTNjM2I3ZDFjN2NiMiIsInVzZXJfaWQiOjEwfQ.ajNOzEUR4JqRl1ddH2mtSoePBHF1vnFpHSwBJxEbklY'</initValue>
+      <name>Usertoken</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzI0MjMxMzAsInNlc3Npb25faWQiOiI4NTljMzE1YS0yNGE3LTRhZTEtYjgyOS0zYzNiN2QxYzdjYjIiLCJ1c2VyX2lkIjoxMH0.d40wRsPlHC4MW9V2TazmP3r4AaRT4yGXdKeggPysG4M'</initValue>
+      <name>Refreshtoken</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk3MTI4ODMsInJvbGUiOiJzdXBlcmFkbWluIiwic2Vzc2lvbl9pZCI6ImQxM2U1ZjUzLTBmNjAtNDljNi05NGRkLTAzYjgxZGI1MDMwNyIsInVzZXJfaWQiOjF9.KFcWZx5gj9akg1vxOhw-3vuvxKwXElFNPjHHjjfoE0s'</initValue>
+      <name>Admintoken</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
