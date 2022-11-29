@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Logout invalid token</name>
    <tag></tag>
-   <elementGuidId>30369c3d-ce6d-46ed-b309-247e2eb6f1e6</elementGuidId>
+   <elementGuidId>ab584c52-18cf-4e1f-84f8-faed7f1899e6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Annida\&quot;,\n  \&quot;email\&quot;: \&quot;rannida@gmail.com\&quot;,\n  \&quot;password\&quot;: \&quot;Annida456\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>3f591b82-6965-4928-8067-9e5cb591f186</webElementGuid>
+      <value>Bearer ${GlobalVariable.Refreshtoken}</value>
+      <webElementGuid>aae427ef-b8ac-4ddb-a29a-44d727a2eb53</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://ec2-3-85-131-211.compute-1.amazonaws.com/api/v1/users/signup</restUrl>
+   <restUrl>${variable}/auth/logout</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -36,6 +32,20 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.Globalurl</defaultValue>
+      <description></description>
+      <id>2f5945fc-1fa9-4779-866f-e31a2f13de48</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.Refreshtoken</defaultValue>
+      <description></description>
+      <id>9a002559-371e-41e4-a4cc-5316fcccbee6</id>
+      <masked>false</masked>
+      <name>Refreshtoken</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

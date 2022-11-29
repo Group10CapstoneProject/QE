@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Generate invalid HTTP method</name>
    <tag></tag>
-   <elementGuidId>30369c3d-ce6d-46ed-b309-247e2eb6f1e6</elementGuidId>
+   <elementGuidId>a1cda1f7-8c8c-49d1-a38a-6ae62a9bb9d1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Annida\&quot;,\n  \&quot;email\&quot;: \&quot;rannida@gmail.com\&quot;,\n  \&quot;password\&quot;: \&quot;Annida456\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;refresh_token\&quot;: \&quot;${GlobalVariable.Refreshtoken}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,13 +21,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>3f591b82-6965-4928-8067-9e5cb591f186</webElementGuid>
+      <webElementGuid>7dc31289-1d33-4535-a5ed-0ec53fe57e0a</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://ec2-3-85-131-211.compute-1.amazonaws.com/api/v1/users/signup</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${variable}/auth/refresh</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -36,6 +36,20 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.Globalurl</defaultValue>
+      <description></description>
+      <id>dc97b070-cb02-4442-9bec-03d11e3ee7cc</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.Refreshtoken</defaultValue>
+      <description></description>
+      <id>5570a917-92ab-4b49-be77-f6a10bffd896</id>
+      <masked>false</masked>
+      <name>Refreshtoken</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

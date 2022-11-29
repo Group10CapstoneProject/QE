@@ -11,27 +11,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'qeapi2@gmail.com'</initValue>
-      <name>GlobalRegEmail</name>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk3MjY3MzAsInJvbGUiOiJ1c2VyIiwic2Vzc2lvbl9pZCI6Ijg1OWMzMTVhLTI0YTctNGFlMS1iODI5LTNjM2I3ZDFjN2NiMiIsInVzZXJfaWQiOjEwfQ.ajNOzEUR4JqRl1ddH2mtSoePBHF1vnFpHSwBJxEbklY'</initValue>
+      <name>Usertoken</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk3Mjg3ODcsInJvbGUiOiJ1c2VyIiwic2Vzc2lvbl9pZCI6IjM4ZTYzODJhLTUxMjUtNDNhZi1hMzU4LWVkYjU1ZTJhYzYxNSIsInVzZXJfaWQiOjc5fQ.qAeIDaWiVtix0zEWYZ8Lkr7BTeqPO66-Yp_Vacnpo_4'</initValue>
-      <name>UserToken</name>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzI0MjMxMzAsInNlc3Npb25faWQiOiI4NTljMzE1YS0yNGE3LTRhZTEtYjgyOS0zYzNiN2QxYzdjYjIiLCJ1c2VyX2lkIjoxMH0.d40wRsPlHC4MW9V2TazmP3r4AaRT4yGXdKeggPysG4M'</initValue>
+      <name>Refreshtoken</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk3Mjc2NTksInJvbGUiOiJhZG1pbiIsInNlc3Npb25faWQiOiIwMTNhMGRkMi1iODY4LTQ2MjUtODlmNy0xMWFiODExNWRkODQiLCJ1c2VyX2lkIjo3N30.oZcGkRmGokto8FIpgIHXPKK7xuOSzEZGXGmnKuTs7U0'</initValue>
-      <name>AdminToken</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk3Mjc1NTksInJvbGUiOiJzdXBlcmFkbWluIiwic2Vzc2lvbl9pZCI6IjQ5ODM4NjdhLTQ2YzYtNGJkYS1iMTllLTRiOGRkY2Q0NTVjYyIsInVzZXJfaWQiOjF9.CFl-y-QsjHMh2sgkpHBN0u51QxVYhZHIlhWXekINVKU'</initValue>
-      <name>SuperAdminToken</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk3MDc4NjUsInJvbGUiOiJ1c2VyIiwic2Vzc2lvbl9pZCI6IjU5YzU1YWU0LTE4YzEtNGY4Yi05N2YxLWE1ZGMxYjM5NDg5YyIsInVzZXJfaWQiOjc5fQ.e1BDaGjJvPZMhDAml96aRFyn8CnVxxcUGiohWzGN_i4'</initValue>
-      <name>RefreshToken</name>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk3MTI4ODMsInJvbGUiOiJzdXBlcmFkbWluIiwic2Vzc2lvbl9pZCI6ImQxM2U1ZjUzLTBmNjAtNDljNi05NGRkLTAzYjgxZGI1MDMwNyIsInVzZXJfaWQiOjF9.KFcWZx5gj9akg1vxOhw-3vuvxKwXElFNPjHHjjfoE0s'</initValue>
+      <name>Admintoken</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

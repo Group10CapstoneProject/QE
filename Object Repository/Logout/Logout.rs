@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register</name>
+   <name>Logout</name>
    <tag></tag>
-   <elementGuidId>30369c3d-ce6d-46ed-b309-247e2eb6f1e6</elementGuidId>
+   <elementGuidId>d4ec2f79-ef8b-4927-9b59-fcce363e8f04</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Annida\&quot;,\n  \&quot;email\&quot;: \&quot;rannida@gmail.com\&quot;,\n  \&quot;password\&quot;: \&quot;Annida456\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>3f591b82-6965-4928-8067-9e5cb591f186</webElementGuid>
+      <value>Bearer ${GlobalVariable.Usertoken}</value>
+      <webElementGuid>6f40ef37-6399-45d3-9eac-f9cb04cafcc4</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://ec2-3-85-131-211.compute-1.amazonaws.com/api/v1/users/signup</restUrl>
+   <restUrl>${variable}/auth/logout</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -36,6 +32,20 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.Globalurl</defaultValue>
+      <description></description>
+      <id>d574f2ae-b1fa-4d24-bfcd-3856ba05d83c</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.Usertoken</defaultValue>
+      <description></description>
+      <id>1bbd9e10-142f-4b4f-90dd-c9185cc05750</id>
+      <masked>false</masked>
+      <name>Usertoken</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
