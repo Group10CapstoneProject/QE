@@ -26,9 +26,9 @@ Map parsedJson = slurper.parseText(response.getResponseText())
 
 String Token = parsedJson.data.refresh_token
 
-GlobalVariable.Refreshtoken = Token
+GlobalVariable.RefreshToken = Token
 
-println(GlobalVariable.Refreshtoken)
+println(GlobalVariable.RefreshToken)
 
 response = WS.sendRequest(findTestObject('Generate token/Generate new token'))
 

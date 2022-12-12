@@ -43,13 +43,6 @@
       <masked>false</masked>
       <name>variable</name>
    </variables>
-   <variables>
-      <defaultValue>GlobalVariable.Usertoken</defaultValue>
-      <description></description>
-      <id>a9afcd3e-a890-4469-8699-bd8a5f56b0c3</id>
-      <masked>false</masked>
-      <name>Usertoken</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

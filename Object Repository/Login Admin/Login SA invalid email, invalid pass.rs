@@ -43,13 +43,6 @@
       <masked>false</masked>
       <name>variable</name>
    </variables>
-   <variables>
-      <defaultValue>GlobalVariable.Admintoken</defaultValue>
-      <description></description>
-      <id>3711b4f8-b473-48ad-9401-aa2b62ecd681</id>
-      <masked>false</masked>
-      <name>Admintoken</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

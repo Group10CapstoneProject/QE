@@ -16,8 +16,8 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.Refreshtoken}</value>
-      <webElementGuid>aae427ef-b8ac-4ddb-a29a-44d727a2eb53</webElementGuid>
+      <value>Bearer ${GlobalVariable.RefreshToken}</value>
+      <webElementGuid>5e90e04a-9b36-4e06-87f3-710f2ae85f04</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
@@ -40,11 +40,11 @@
       <name>variable</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.Refreshtoken</defaultValue>
+      <defaultValue>GlobalVariable.RefreshToken</defaultValue>
       <description></description>
       <id>9a002559-371e-41e4-a4cc-5316fcccbee6</id>
       <masked>false</masked>
-      <name>Refreshtoken</name>
+      <name>RefreshToken</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
