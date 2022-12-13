@@ -40,11 +40,11 @@
       <name>variable</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.Usertoken</defaultValue>
+      <defaultValue>GlobalVariable.UserToken</defaultValue>
       <description></description>
       <id>905df599-f95a-4d04-b083-3dfd72704ec8</id>
       <masked>false</masked>
-      <name>Usertoken</name>
+      <name>UserToken</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

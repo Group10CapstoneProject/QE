@@ -44,11 +44,11 @@
       <name>variable</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.Refreshtoken</defaultValue>
+      <defaultValue>GlobalVariable.RefreshToken</defaultValue>
       <description></description>
       <id>2636071c-53db-4f7e-b2e6-61769322ee76</id>
       <masked>false</masked>
-      <name>Refreshtoken</name>
+      <name>RefreshToken</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

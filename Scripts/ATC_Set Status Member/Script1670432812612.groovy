@@ -16,41 +16,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import groovy.json.JsonSlurper as JsonSlurper
-
-response = WS.sendRequest(findTestObject('Login/Login valid account'))
-
-JsonSlurper slurper = new JsonSlurper()
-
-Map parsedJson = slurper.parseText(response.getResponseText())
-
-String Token = parsedJson.data.refresh_token
-
-GlobalVariable.RefreshToken = Token
-
-println(GlobalVariable.RefreshToken)
-
-response = WS.sendRequest(findTestObject('Generate token/Generate new token'))
-
-WS.verifyResponseStatusCode(response, 200)
-
-response = WS.sendRequest(findTestObject('Generate token/Generate invalid format data'))
-
-WS.verifyResponseStatusCode(response, 400)
-
-response = WS.sendRequest(findTestObject('Generate token/Generate without body'))
-
-WS.verifyResponseStatusCode(response, 400)
-
-response = WS.sendRequest(findTestObject('Generate token/Generate invalid url'))
-
-WS.verifyResponseStatusCode(response, 404)
-
-response = WS.sendRequest(findTestObject('Generate token/Generate invalid HTTP method'))
-
-WS.verifyResponseStatusCode(response, 405)
-
-response = WS.sendRequest(findTestObject('Generate token/Generate with empty token'))
-
-WS.verifyResponseStatusCode(response, 400)
 

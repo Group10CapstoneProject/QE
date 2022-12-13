@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;new_token\&quot;: \&quot;${GlobalVariable.Refreshtoken}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;new_token\&quot;: \&quot;${GlobalVariable.RefreshToken}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -44,11 +44,11 @@
       <name>variable</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.Refreshtoken</defaultValue>
+      <defaultValue>GlobalVariable.RefreshToken</defaultValue>
       <description></description>
       <id>2d163916-1274-4e82-9261-635cf691a453</id>
       <masked>false</masked>
-      <name>Refreshtoken</name>
+      <name>RefreshToken</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

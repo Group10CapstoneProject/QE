@@ -16,8 +16,8 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.Usertoken}</value>
-      <webElementGuid>8e6b3a7d-eeb4-409b-876d-e8a695a74b98</webElementGuid>
+      <value>Bearer ${GlobalVariable.UserToken}</value>
+      <webElementGuid>7af71126-762f-4260-97d9-cac8a51e74b6</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
@@ -40,11 +40,11 @@
       <name>variable</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.Usertoken</defaultValue>
+      <defaultValue>GlobalVariable.UserToken</defaultValue>
       <description></description>
       <id>aa2778ce-8e09-4c31-93a3-8f609fcf5123</id>
       <masked>false</masked>
-      <name>Usertoken</name>
+      <name>UserToken</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

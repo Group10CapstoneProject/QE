@@ -18,35 +18,39 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-response = WS.sendRequest(findTestObject('Login/Login valid account'), FailureHandling.CONTINUE_ON_FAILURE)
+response = WS.sendRequest(findTestObject('Login Admin/Login Admin'), FailureHandling.CONTINUE_ON_FAILURE)
 
 JsonSlurper slurper = new JsonSlurper()
 
 Map parsedJson = slurper.parseText(response.getResponseText())
 
-String Token = parsedJson.data.access_token
+String Token = parsedJson.data.refresh.token
 
-GlobalVariable.UserToken = Token
+GlobalVariable.RefreshTokenAdmin = Token
 
-println(GlobalVariable.UserToken)
+println(GlobalVariable.RefreshTokenAdmin)
 
-response = WS.sendRequest(findTestObject('Logout/Logout'), FailureHandling.CONTINUE_ON_FAILURE)
+response = WS.sendRequest(findTestObject('Generate token admin/Generate new token'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('Logout/Logout invalid HTTP method'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WS.verifyResponseStatusCode(response, 405, FailureHandling.CONTINUE_ON_FAILURE)
-
-response = WS.sendRequest(findTestObject('Logout/Logout invalid url'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WS.verifyResponseStatusCode(response, 404, FailureHandling.CONTINUE_ON_FAILURE)
-
-response = WS.sendRequest(findTestObject('Logout/Logout invalid token'), FailureHandling.CONTINUE_ON_FAILURE)
+response = WS.sendRequest(findTestObject('Generate token admin/Generate new invalid body'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WS.verifyResponseStatusCode(response, 400, FailureHandling.CONTINUE_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('Logout/Logout without token'), FailureHandling.CONTINUE_ON_FAILURE)
+response = WS.sendRequest(findTestObject('Generate token admin/Generate new without body'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WS.verifyResponseStatusCode(response, 400, FailureHandling.CONTINUE_ON_FAILURE)
+
+response = WS.sendRequest(findTestObject('Generate token admin/Generate new invalid url'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WS.verifyResponseStatusCode(response, 404, FailureHandling.CONTINUE_ON_FAILURE)
+
+response = WS.sendRequest(findTestObject('Generate token admin/Generate new invalid HTTP method'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WS.verifyResponseStatusCode(response, 405, FailureHandling.CONTINUE_ON_FAILURE)
+
+response = WS.sendRequest(findTestObject('Generate token admin/Generate new empty token'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WS.verifyResponseStatusCode(response, 400, FailureHandling.CONTINUE_ON_FAILURE)
 

@@ -10,8 +10,8 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;${variable}/auth/admin/login&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;     \&quot;,\n  \&quot;password\&quot;: \&quot;123456\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
    <httpBodyType>text</httpBodyType>
@@ -20,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
+      <value>application/json</value>
       <webElementGuid>c6381495-06ea-4082-8fc7-c798faf3f904</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
@@ -36,6 +36,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.Globalurl</defaultValue>
+      <description></description>
+      <id>132a0dc2-6420-432c-93d3-9885ea80fc61</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
