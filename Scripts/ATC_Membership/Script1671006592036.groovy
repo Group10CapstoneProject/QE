@@ -19,15 +19,30 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.view.View'), 0)
+Mobile.tap(findTestObject('Object Repository/Membership/android.view.View-Profile'), 0)
 
-Mobile.swipe(50, 1000, 50, -100)
+Mobile.tap(findTestObject('Membership/android.widget.Button-Activasi Member'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.widget.Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.EditText - Masukkan jumlah angka disini'), 0)
 
-Mobile.verifyElementExist(findTestObject('Login/android.view.View-Lupa Password'), 0)
+Mobile.setText(findTestObject('Object Repository/Membership/android.widget.EditText - Masukkan jumlah angka disini (1)'), 
+    '3', 0)
+
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-Lanjutkan Pembayaran'), 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-Metode'), 0)
+
+Mobile.tap(findTestObject('Membership/android.widget.RadioButton-Bank BNI'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-Terapkan'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-Bayar'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Membership/android.view.View-Konfirmasi Pembayaran Page'), 0)
 
 Mobile.closeApplication()
 

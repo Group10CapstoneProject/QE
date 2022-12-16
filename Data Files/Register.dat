@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>03a4b706-fc84-4469-b248-2bebf7826e9d</dataFileGUID>
-   <dataSourceUrl>C:\Users\Athif\Katalon Studio\Capstone\API Sprint 3\Register-mobile - Sheet1.csv</dataSourceUrl>
+   <dataSourceUrl>E:\Capstone\Mobile\Register-mobile - Sheet1.csv</dataSourceUrl>
    <driver>CSV</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

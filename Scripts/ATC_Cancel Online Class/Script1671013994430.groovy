@@ -19,15 +19,31 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.view.View'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.ImageView'), 0)
 
-Mobile.swipe(50, 1000, 50, -100)
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.widget.ImageView'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.widget.Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.view.View'), 0)
 
-Mobile.verifyElementExist(findTestObject('Login/android.view.View-Lupa Password'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Book Online Class1/android.widget.ImageView-Kels1'), 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Lanjutkan Pembayaram'), 0)
+
+Mobile.tap(findTestObject('Transaksi/Pilih metode Pembayaran'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.RadioButton'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Terapkan'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Cancel Book Online Class/android.widget.Button-Batalkan Pesanan'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Cancel Book Online Class/android.widget.Button-YA BATALKAN'), 0)
 
 Mobile.closeApplication()
 

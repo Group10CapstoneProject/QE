@@ -19,15 +19,31 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class/android.widget.Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class/android.view.View'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class/android.widget.ImageView (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.view.View'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class/android.widget.Button (1)'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Book Online Class1/android.widget.ImageView-Kels1'), 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Lanjutkan Pembayaram'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Pilih Metode'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.RadioButton'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Terapkan'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Bayar'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Book Online Class1/android.view.View-Verify Konfirmasi'), 0)
 
 Mobile.closeApplication()
 

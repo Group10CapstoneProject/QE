@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.view.View'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Offline Class/android.widget.ImageView'), 0)
 
-Mobile.swipe(50, 1000, 50, -100)
+Mobile.tap(findTestObject('Object Repository/Book Offline Class/android.widget.ImageView (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Offline Class/android.widget.Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.widget.Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Offline Class/android.widget.Button (1)'), 0)
 
-Mobile.verifyElementExist(findTestObject('Login/android.view.View-Lupa Password'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Offline Class/android.widget.Button (2)'), 0)
 
 Mobile.closeApplication()
 
