@@ -29,9 +29,7 @@ Mobile.tap(findTestObject('Book Offline Class/Book (1)'), 0)
 
 Mobile.tap(findTestObject('Book Offline Class/Book Detail Kelas'), 0)
 
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Transaksi/PILIH METODE PEMBAYARAN ID'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Offline Class/PILIH METODE PEMBAYARAN'), 0)
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
@@ -39,9 +37,13 @@ Mobile.tap(findTestObject('Transaksi/Metode pembayaran 2'), 0)
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Transaksi/TERAPKAN ID'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Offline Class/Terapkan'), 0)
 
-Mobile.tap(findTestObject('Transaksi/Bayar ID'), 0)
+Mobile.tap(findTestObject('Object Repository/Book Offline Class/Bayar'), 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Transaksi/KIRIMKAN ID'), 0)
 
 Mobile.verifyElementExist(findTestObject('Transaksi/verify Konfirmasi Pembayaran'), 0)
 

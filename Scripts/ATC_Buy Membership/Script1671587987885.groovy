@@ -19,9 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Object Repository/Membership/android.view.View-Profile'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Membership/Profile ID'), 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Membership/android.widget.Button-Activasi Member'), 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button'), 0)
 
@@ -34,15 +40,29 @@ Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-La
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-Metode'), 0)
+Mobile.tap(findTestObject('Transaksi/PILIH METODE PEMBAYARAN ID'), 0)
 
-Mobile.tap(findTestObject('Membership/android.widget.RadioButton-Bank BNI'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-Terapkan'), 0)
+Mobile.tap(findTestObject('Transaksi/Metode pembayaran 2'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-Bayar'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Membership/android.view.View-Konfirmasi Pembayaran Page'), 0)
+Mobile.tap(findTestObject('Transaksi/TERAPKAN ID'), 0)
+
+Mobile.tap(findTestObject('Transaksi/Bayar ID'), 0)
+
+Mobile.verifyElementExist(findTestObject('Transaksi/verify Konfirmasi Pembayaran'), 0)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

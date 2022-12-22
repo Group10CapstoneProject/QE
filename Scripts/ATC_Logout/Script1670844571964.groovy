@@ -19,7 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Object Repository/Logout/android.view.View'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Membership/Profile ID'), 0)
 
 Mobile.swipe(50, 1000, 50, -100)
 

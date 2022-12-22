@@ -19,15 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.ImageView'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button'), 0)
-
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Book Offline Class/Class ID'), 0)
+
+Mobile.tap(findTestObject('Book Online Class1/Online'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.view.View'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Book Online Class1/android.widget.ImageView-Kels1'), 0)
 
@@ -35,15 +33,29 @@ Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Lanjutkan Pembayaram'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Pilih Metode'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.RadioButton'), 0)
+Mobile.tap(findTestObject('Transaksi/PILIH METODE PEMBAYARAN ID'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Terapkan'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Bayar'), 0)
+Mobile.tap(findTestObject('Transaksi/Metode pembayaran 2'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Book Online Class1/android.view.View-Verify Konfirmasi'), 0)
+Mobile.tap(findTestObject('Transaksi/TERAPKAN ID'), 0)
+
+Mobile.tap(findTestObject('Transaksi/Bayar ID'), 0)
+
+Mobile.verifyElementExist(findTestObject('Transaksi/verify Konfirmasi Pembayaran'), 0)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

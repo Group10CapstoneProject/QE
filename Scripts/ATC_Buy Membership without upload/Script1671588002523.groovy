@@ -21,13 +21,22 @@ Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Book Offline Class/Class ID'), 0)
+Mobile.tap(findTestObject('Membership/Profile ID'), 0)
 
-Mobile.tap(findTestObject('Book Offline Class/Offline ID'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Book Offline Class/Book (1)'), 0)
+Mobile.tap(findTestObject('Membership/android.widget.Button-Activasi Member'), 0)
 
-Mobile.tap(findTestObject('Book Offline Class/Book Detail Kelas'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.EditText - Masukkan jumlah angka disini'), 0)
+
+Mobile.setText(findTestObject('Object Repository/Membership/android.widget.EditText - Masukkan jumlah angka disini (1)'), 
+    '3', 0)
+
+Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button-Lanjutkan Pembayaran'), 0)
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
@@ -42,6 +51,10 @@ Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('Transaksi/TERAPKAN ID'), 0)
 
 Mobile.tap(findTestObject('Transaksi/Bayar ID'), 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Transaksi/KIRIMKAN ID'), 0)
 
 Mobile.verifyElementExist(findTestObject('Transaksi/verify Konfirmasi Pembayaran'), 0)
 

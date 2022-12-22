@@ -35,7 +35,7 @@ Mobile.tap(findTestObject('Transaksi/PILIH METODE PEMBAYARAN ID'), 0)
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Transaksi/Metode pembayaran 2'), 0)
+Mobile.tap(findTestObject('Transaksi/My Membership Payment'), 0)
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
