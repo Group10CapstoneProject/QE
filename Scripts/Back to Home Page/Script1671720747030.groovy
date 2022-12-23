@@ -19,51 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Book Offline Class/Class ID'), 0)
-
-Mobile.tap(findTestObject('Book Online Class1/Online'), 0)
-
-Mobile.tap(findTestObject('Book Online Class1/Online Class categories 1'), 0)
-
-Mobile.tap(findTestObject('Book Online Class1/Online class 1'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Book Online Class1/LANJUTKAN KE PEMBAYARAN ID'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Transaksi/PILIH METODE PEMBAYARAN ID'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Book Offline Class/Metode Pembayaran 1'), 0)
-
-Mobile.tap(findTestObject('Transaksi/TERAPKAN ID'), 0)
-
-Mobile.tap(findTestObject('Transaksi/Ubah pembayaran ID'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Transaksi/Metode pembayaran 2'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Transaksi/TERAPKAN ID'), 0)
-
-Mobile.tap(findTestObject('Transaksi/Bayar ID'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Transaksi/BATALKAN PESANAN ID (1)'), 0)
-
-Mobile.delay(0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Transaksi/Konfirmasi batalkan YA ID'), 0)
-
-Mobile.verifyElementExist(findTestObject('Transaksi/Verify Rincian transaksi'), 0)
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
@@ -73,5 +29,5 @@ Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
-Mobile.closeApplication()
+Mobile.closeApplication(FailureHandling.STOP_ON_FAILURE)
 

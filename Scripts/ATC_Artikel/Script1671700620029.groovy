@@ -19,30 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Artikel/Artikel 1'), 0)
 
-Mobile.tap(findTestObject('Membership/Profile ID'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Membership/android.widget.Button-Activasi Member'), 0)
-
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Membership/android.widget.Button'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Membership/android.widget.EditText - Masukkan jumlah angka disini'), 0)
-
-Mobile.setText(findTestObject('Object Repository/Membership/android.widget.EditText - Masukkan jumlah angka disini (1)'), 
-    'abc', 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/Membership/android.widget.Button-Lanjutkan Pembayaran'), 0)
-
-Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
-
-Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
-
-Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Artikel/Judul artikel'), 0)
 
 Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 

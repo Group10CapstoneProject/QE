@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+
 int x = findTestData('Login').getRowNumbers()
 
 for (i = 1; i <= x; i++) {
@@ -44,6 +46,10 @@ for (i = 1; i <= x; i++) {
 }
 
 Mobile.verifyElementExist(findTestObject('Login/android.widget.ImageView-verifyHome'), 0)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 
