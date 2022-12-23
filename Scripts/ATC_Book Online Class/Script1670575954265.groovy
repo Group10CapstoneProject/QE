@@ -25,13 +25,13 @@ Mobile.tap(findTestObject('Book Offline Class/Class ID'), 0)
 
 Mobile.tap(findTestObject('Book Online Class1/Online'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.view.View'), 0)
+Mobile.tap(findTestObject('Book Online Class1/Online Class categories 1'), 0)
 
-Mobile.tap(findTestObject('Book Online Class1/android.widget.ImageView-Kels1'), 0)
+Mobile.tap(findTestObject('Book Online Class1/Online class 1'), 0)
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Book Online Class1/android.widget.Button-Lanjutkan Pembayaram'), 0)
+Mobile.tap(findTestObject('Book Online Class1/LANJUTKAN KE PEMBAYARAN ID'), 0)
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
@@ -46,8 +46,6 @@ Mobile.tap(findTestObject('Transaksi/TERAPKAN ID'), 0)
 Mobile.tap(findTestObject('Transaksi/Bayar ID'), 0)
 
 Mobile.verifyElementExist(findTestObject('Transaksi/verify Konfirmasi Pembayaran'), 0)
-
-Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 

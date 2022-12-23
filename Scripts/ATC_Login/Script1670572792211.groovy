@@ -47,5 +47,9 @@ for (i = 1; i <= x; i++) {
 
 Mobile.verifyElementExist(findTestObject('Login/android.widget.ImageView-verifyHome'), 0)
 
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+
 Mobile.closeApplication()
 

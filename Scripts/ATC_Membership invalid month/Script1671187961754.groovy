@@ -46,7 +46,5 @@ Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
-Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
-
 Mobile.closeApplication()
 

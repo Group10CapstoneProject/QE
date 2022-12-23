@@ -19,11 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Artikel/Artikel 1'), 0)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Artikel/Judul artikel'), 0)
+Mobile.tap(findTestObject('Membership/Profile ID'), 0)
 
-Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
+Mobile.swipe(50, 1000, 50, -100)
+
+Mobile.tap(findTestObject('Object Repository/Logout/android.widget.ImageView'), 0)
+
+Mobile.tap(findTestObject('Logout/BATAL Logout'), 0)
+
+Mobile.verifyElementExist(findTestObject('Logout/android.widget.ImageView'), 0)
 
 Mobile.closeApplication()
 

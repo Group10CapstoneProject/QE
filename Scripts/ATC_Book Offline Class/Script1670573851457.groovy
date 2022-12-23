@@ -25,9 +25,9 @@ Mobile.tap(findTestObject('Book Offline Class/Class ID'), 0)
 
 Mobile.tap(findTestObject('Book Offline Class/Offline ID'), 0)
 
-Mobile.tap(findTestObject('Book Offline Class/Book (1)'), 0)
+Mobile.tap(findTestObject('Book Offline Class/Book Ofline Class'), 0)
 
-Mobile.tap(findTestObject('Book Offline Class/Book Detail Kelas'), 0)
+Mobile.tap(findTestObject('Book Offline Class/Book Detail Class ID'), 0)
 
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
@@ -44,8 +44,6 @@ Mobile.tap(findTestObject('Transaksi/TERAPKAN ID'), 0)
 Mobile.tap(findTestObject('Transaksi/Bayar ID'), 0)
 
 Mobile.verifyElementExist(findTestObject('Transaksi/verify Konfirmasi Pembayaran'), 0)
-
-Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 

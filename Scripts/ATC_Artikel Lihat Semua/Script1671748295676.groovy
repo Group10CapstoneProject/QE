@@ -19,9 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
-Mobile.tap(findTestObject('Artikel/Artikel 1'), 0)
+Mobile.tap(findTestObject('Artikel/Lihat Semua Artikel'), 0)
+
+Mobile.tap(findTestObject('Artikel/Article 1 from lihat semua'), 0)
 
 Mobile.verifyElementExist(findTestObject('Object Repository/Artikel/Judul artikel'), 0)
+
+Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack(FailureHandling.STOP_ON_FAILURE)
 

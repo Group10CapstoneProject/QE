@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.example.capstone_alterra_flutter')
 
+Mobile.tap(findTestObject('Mulai Splash Screen'), 0)
+
 Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Register/Buat Akun'), 0)
@@ -77,7 +79,7 @@ for (i = 1; i <= x; i++) {
         Mobile.tap(findTestObject('Register/android.widget.EditText - Email AddressContoh  kelompok10gmail.com X'), 0)
 
         Mobile.setText(findTestObject('Register/android.widget.EditText - Email AddressContoh  kelompok10gmail.com X'), 
-            ('QEmobile' + RN) + '@gmail.com', 0)
+            ('QEMobiles' + RN) + '@gmail.com', 0)
 
         Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
